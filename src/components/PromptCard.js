@@ -17,7 +17,7 @@ const PromptCard = ({ title, initialPrompt, onChange }) => {
         <div className={`prompt-card ${expanded ? 'expanded' : ''}`}>
             <div className={`card-header ${title === 'Affirmative Prompt' ? 'aff-style' : 'neg-style'}`} onClick={handleCardClick}>
                 <h4>{title}</h4>
-                <div className={`arrow ${expanded ? 'expanded' : ''}`}>&#9660;</div>
+                <div className={`arrow ${expanded ? 'expanded' : ''}`}>⌄</div>
             </div>
             <textarea
                 className={`prompt-textarea ${expanded ? 'expanded' : ''}`}
